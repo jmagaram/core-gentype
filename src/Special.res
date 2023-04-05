@@ -1,4 +1,5 @@
 module ArrayIndex = Special__ArrayIndex
 
-@gentype
+// Hack!
+@gentype @genType.as("ArrayIndex_t")
 type arrayIndex = ArrayIndex.t
