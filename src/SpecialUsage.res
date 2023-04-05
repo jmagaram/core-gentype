@@ -5,6 +5,10 @@
 @genType
 type goop1 = {x: Special.ArrayIndex.t}
 
-// GenType works
+// GenType works; full path to type definition
 @genType
 type goop2 = {x: Special__ArrayIndex.t}
+
+// GenType works; copy full path definition to wrapper module, genType there
+@genType
+type goop3 = {x: Special.arrayIndex}
